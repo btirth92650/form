@@ -1,0 +1,13 @@
+{
+    "student": [
+        {
+            "Fname":"",
+            "Lname":"",
+            "Email":"",
+            "Password":"",
+            "Age":"",
+            "Address":"",
+            "Phone":""
+                }
+    ]
+}

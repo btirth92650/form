@@ -1,0 +1,87 @@
+<!-- <section class="container form title">
+    <h1 class="text-center "> Registration Form </h1>
+    <form style="margin-top:20px" #userForm="ngForm" (ngSubmit)="userForm.form.valid && addDetails()">
+        <div class="row">
+            <div class="col-md-6">
+                <label class="form-label"> First Name:</label>
+                <input type="text" class="form-control" placeholder="Enter firstname..." name="Fname"
+               [(ngModel)]="formData.Fname" #firstName="ngModel" required >
+               <span *ngIf="firstName.invalid && firstName.touched" class="error">*Firstname is required</span>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label"> Last Name:</label>
+                <input type="text" class="form-control" placeholder="Enter lastame..." name="Lname"
+               [(ngModel)]="formData.Lname" #lastName="ngModel" required >
+               <span *ngIf="lastName.invalid && lastName.touched" class="error">*LastName is required</span>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6">
+                <label class="form-label"> E-mail:</label>
+                <input type="email" name="Email" class="form-control" [(ngModel)]="formData.Email"
+                    placeholder="your@email.com" pattern="[^ @]*@[^ @]*" required #email="ngModel">
+                <span *ngIf="email.invalid && email.touched" class="error">*please enter correct email @ is compulsory</span>
+            </div>
+            <div class="col-md-6 ">
+                <label class="form-label"> password:</label>
+                <input type="password" name="Password" class="form-control" [(ngModel)]="formData.Password"
+                    placeholder="Enter password..." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required #password="ngModel">  
+                <span *ngIf="password.invalid && password.touched" class="error">*At least 8 characters in length,Lowercase letters
+                    Uppercase letters,Numbers,Special characters all are include </span>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-3">
+                <label class="form-label"> Age:</label>
+                <input type="number" name="Age" maxlength="2" class="form-control" [(ngModel)]="formData.Age"
+                    placeholder="Enter age..." required #age="ngModel">
+                <span *ngIf="age.invalid && age.touched" class="error">*Age is required</span>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label"> Address:</label>
+                <input type="text" name="Address" class="form-control" [(ngModel)]="formData.Address"
+                    placeholder="Enter address..." required #address="ngModel">
+                <span *ngIf="address.invalid && address.touched" class="error">*Address is required</span>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label"> Phone no:</label>
+                <input type="number" name="Phone" class="form-control" [(ngModel)]="formData.Phone"
+                    placeholder="Enter number..." pattern="[6789][0-9]{9}" required #phone="ngModel">
+                <span *ngIf="phone.invalid && phone.touched " class="error">*Please enter valid phone number</span>
+            </div>
+        </div>
+<br>
+
+        <div class="text-center">
+            <button [disabled]="!userForm.valid"   type="submit" class="btn btn-success">Submit</button>
+            <button style="margin-left: 20px;" type="reset" class="btn btn-primary"> Reset</button>
+        </div>    
+    </form>
+</section> -->
+
+<br><br><br>
+
+<!-- <section class="text-center">
+
+    <button (click)="onClick()" class="btn btn-success"> Show Data </button>
+
+<div *ngIf="isShow">
+    <h1>my name is bhalani tirth nanajibhai</h1>
+</div>
+
+</section> -->
+<br><br><br>
+
+<h3 [appBackground]="'lightgrey'" [onMouseoverColor]="'grey'"> This Is My Background Directive</h3> <br><br><br>
+
+<h3 [appBackground]="'lightgreen'" [onMouseoverColor]="'green'"> This Is My Second Section Using Custome Directive</h3>
+
+<br><br><br>
+
+<div class="text-center" *appAppUnless=false>
+ <span>This is For Testing </span>
+ <p>Condition is Fulfielled</p>
+</div>
+
+
